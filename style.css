@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.8);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+
+.score-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(102, 126, 234, 0.5);
+    min-width: 150px;
+}
+
+.score-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #a0aec0;
+}
+
+.score {
+    font-size: 3em;
+    font-weight: bold;
+    color: #4ade80;
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.8);
+}
+
+.game-info {
+    margin: 20px 0;
+    font-size: 0.95em;
+}
+
+.game-info p {
+    margin: 8px 0;
+    color: #cbd5e0;
+}
+
+.status {
+    font-size: 1.1em !important;
+    color: #fbbf24 !important;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.6) !important;
+    font-weight: bold;
+}
+
+canvas {
+    background: linear-gradient(to bottom, #1a202c, #2d3748);
+    border: 3px solid rgba(102, 126, 234, 0.8);
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+    cursor: none;
+}
+
+.instructions {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #a0aec0;
+}
+
+.instructions p {
+    margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+    canvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .scoreboard {
+        gap: 20px;
+    }
+
+    .score-item {
+        min-width: 120px;
+        padding: 15px;
+    }
+
+    .score {
+        font-size: 2.5em;
+    }
+}
